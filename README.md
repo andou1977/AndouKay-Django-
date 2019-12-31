@@ -1,0 +1,2 @@
+# AndouKay-Django-
+AndouKay (Django)
