@@ -1,0 +1,406 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+	
+
+		<!-- Css Starts-->
+
+		<!-- Bootstrap CSS -->
+		<link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+
+		<!-- Font Icons CSS -->
+		<link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet">
+		<link href="{%static 'css/themify-icons.css'%}" rel="stylesheet">
+
+		<!-- Meanmenu CSS -->
+		<link href="{%static 'css/meanmenu.css'%}" rel="stylesheet">
+
+		<!-- Owl Carousel CSS -->
+		<link href="{%static 'css/owl.carousel.css'%}" rel="stylesheet">
+
+		<!-- Magnific Popup CSS -->
+		<link href="{%static 'css/magnific-popup.css'%}" rel="stylesheet">
+
+		<!-- Main CSS -->
+		<link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+		<!-- Css Ends-->
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Preloader -->
+		<div id="{%static 'overlay'%}">
+			<div class="{%static 'spinner'%}"></div>
+		</div>
+		<!-- /Preloader -->
+
+		<!-- Header Top -->
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<ul class="top-info">
+							<li><i class="fa fa-envelope-o"></i><a href="andouemmanuel@gmail.com">andouemmanuel@gmail.com</a></li>
+							<li><i class="fa fa-phone"></i><a href="tel:(+509)42733455">(+509)42733455</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="top-social">
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /Header Top -->
+
+		<!-- Header Area -->
+		<header id="sticky-header" class="gray-bg">
+			<div class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="logo">
+								<a class="navbar-brand" href="index.html"><img src="{%static 'imageandou/250.png'%}" alt="" /></a>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="main-menu text-right">
+								<nav>
+									<ul class="menu">
+										<li><a href="{% url  'index' %}">Home </a>
+
+										</li>
+
+										<li><a href="">Departement <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<ul>
+
+
+														<li><a href="{% url 'ouest' %}">ouest</a></li>
+													   <li><a href="{% url 'nord' %}">Nord</a></li>
+													   	<li><a href="pageerror.html">Nord-Est</a></li>
+													   <li><a href="pageerror.html">Nord-ouest</a></li>
+													   	<li><a href="{% url 'sud' %}">Sud</a></li>
+													   <li><a href="pageerror.html">Sud-Est</a></li>
+													   	<li><a href="pageerror.html">Centre</a></li>
+													   <li><a href="pageerror.html">Artibonite</a></li>
+													   	<li><a href="{% url 'nippes' %}">Nippes</a></li>
+													   <li><a href="pageerror.html">Grand'Anse</a></li>
+
+
+												</li>
+											</ul>
+										</li>
+										<li>
+                                            <a href="Head.html">Faire Un Don</a>
+
+										</li>
+										<li><a href="">Contact</a></li>
+
+	<li id="login-btn" ><a href="pageerror.html">Ajouter votre Maison</a></li>
+											<ul class="menudrop-left">
+
+
+											</ul>
+
+
+										</li>
+
+{#										<li id="login-btn" ><a href="pageerror.html">Ajouter votre Maison</a></li>#}
+
+									</ul>
+
+
+
+								</nav>
+							</div>
+							<div class="mobile-menu"></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.Navigation -->
+		</header><!-- /Header Area -->
+
+		<div class="page-wrapper">
+
+
+			<!-- how-it-works Area -->
+			<section class="how-it-works section-padding">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6">
+							<div class="section-title">
+									<h3>Trouver une Maison a louer <span>ou acheter en Haiti</span></h3>
+								<h2>Les <span>Departements</span></h2>
+								<p>Choisir un Departement dans lequel vous voulez louer ou acheter un appartement </p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+								<h3>	<li id="login-btn" ><a href="{% url 'ouest' %}">OUEST</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement de l'ouest</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="{% url 'sud' %}">Sud</a></li></h3>
+									<p> Trouver une maison a louer ou a acheter dans Le departement du Sud</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="{% url 'nord' %}">Nord</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement du nord</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+										<h3>	<li id="login-btn" ><a href="{% url 'nippes' %}">Nippes</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement de Nippes</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+
+						<div class="row">
+						<div class="col-md-offset-3 col-md-6">
+							<div class="section-title">
+
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+										<h3>	<li id="login-btn" ><a href="pageerror.html">Nord-Est</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement du Nord-Est</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="pageerror.html">Nord-Ouest</a></li></h3>
+									<p> Trouver une maison a louer ou a acheter dans Le departement du Nord-ouest</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="pageerror.html">Sud-Esst</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement du Sud-Est</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+										<h3>	<li id="login-btn" ><a href="pageerror.html">Artibonite</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement de l'Artibonite</p>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+				</div>
+
+
+
+
+						<div class="row">
+						<div class="col-md-offset-3 col-md-6">
+							<div class="section-title">
+
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="pageerror.html">Hinche</a></li></h3>
+									<p>Trouver une maison a louer ou a acheter dans Le departement de Hinche</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/129.png'%}" alt="" />
+									<h3>	<li id="login-btn" ><a href="pageerror.html">Grand-Anse</a></li></h3>
+									<p> Trouver une maison a louer ou a acheter dans Le departement de Grand-Anse</p>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="col-md-3">
+							<div class="single-hw-wk">
+								<div class="single-hw-wk-pad">
+									<img src="{%static 'imageandou/plus.png'%}" alt="" />
+										<h3>	<li id="login-btn" ><a href="pageerror.html">Ajouter Votre Maison</a></li></h3>
+									<p> Ajouter une maison a louer ou a acheter </p>
+								</div>
+							</div>
+
+
+</div>
+
+					</div>
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+			</section><!-- /how-it-works Area -->
+		
+
+
+
+		
+
+
+
+			<!-- Footer Area -->
+			<footer class="site-footer footer-v2 footer-overlay">
+                <div class="container">
+					<!-- .site-bottom -->
+                        <div class="bottom-footer">
+                            <div class="col-md-6 col-sm-4 pull-right">
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-8">
+                                <div class="copyright">
+                                    <p>&copy; 2019 All Rights Reserved Andou Emmanuel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .row -->
+
+            </footer><!-- /Footer Area -->
+
+		</div>
+
+		<!-- Scroll To Top Button -->
+		<a class="page-scroll" href="#page-top" id="toTop"><span class="ti-rocket"></span></a>
+
+
+		<!-- Jquery JS -->
+		<script src="{%static 'js/jquery.min.js'%}"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+		<!-- Smooth Scroll JS -->
+		<script src="{%static 'js/SmoothScroll.js'%}"></script>
+
+		<!-- Jquery Easing Plugin -->
+		<script src="{%static 'js/jquery.easing.min.js'%}"></script>
+
+		<!-- Meanmenu Plugin -->
+		<script src="{%static 'js/jquery.meanmenu.js'%}"></script>
+
+		<!-- Jquery Scroll To Top Plugin -->
+		<script src="{%static 'js/jquery.scrollToTop.min.js'%}"></script>
+
+		<!-- Jquery Form Validation Plugin -->
+		<script src="{%static 'js/jqBootstrapValidation.js'%}"></script>
+
+		<!-- Magnific Popup Plugin JS -->
+		<script src="{%static 'js/magnific-popup.min.js'%}"></script>
+
+		<!-- Owl Carousel Plugin -->
+		<script src="{%static 'js/owl.carousel.min.js'%}"></script>
+
+		<!-- Isotope JS -->
+		<script src="{%static 'js/isotope.pkgd.min.js'%}"></script>
+		
+		<!-- parallax Plugin -->
+		<script src="{%static 'js/parallax.min.js'%}"></script>
+		
+		<!-- waypoints Plugin -->
+		<script src="{%static 'js/waypoints.min.js'%}"></script>
+		
+		<!-- Coverter Plugin -->
+		<script src="{%static 'js/converter.js'%}"></script>
+
+		<!-- Contact Form Javascript -->
+		<script src="{%static 'js/contact.js'%}"></script>
+		
+		<!-- CounterUp Plugin -->
+		<script src="{%static 'js/jquery.counterup.js'%}"></script>
+
+		<!-- Main Javascript -->
+		<script src="{%static 'js/main.js'%}"></script>
+		
+	</body>
+
+</html>
